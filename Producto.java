@@ -1,11 +1,11 @@
 public class Producto{
     private String codigo;
     private String nombre;
-    private double precio;
+    private Double precio;
     private Categoria cat;
     private int stock;
 
-    public Producto(String codigo, String nombre, double precio, Categoria cat){
+    public Producto(String codigo, String nombre, double precio, Categoria cat, int stock){
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
@@ -13,20 +13,41 @@ public class Producto{
         this.stock = stock;
     }
 
-    public String get_Codigo{
+    public String get_Codigo(){
         return this.codigo;
     }
-    public String get_nombre{
+    public String get_nombre(){
         return this.nombre;
     }
-    public double get_precio{
+    public Double get_precio(){
         return this.precio;
     }
-    public String get_Categoria{
+    public Categoria get_Categoria(){
         return this.cat;
     }
-    public String get_Stock{
+    public int get_Stock(){
         return this.stock;
     }
+    public void set_Codigo(String codigo){
+        this.codigo = codigo;
+    }
+    public void set_Nombre(String nombre){
+        this.nombre = nombre;
+    }
+     public void set_Precio(Double precio){
+        this.precio = precio;
+    }
+     public void set_Categoria(Categoria cat){
+        this.cat = cat;
+    }
+    public void set_Stock(int stock){
+        this.stock = stock;
+    }
+
+    public double todoStock(){
+        return stock * precio;
+    }
+
+
 
 }

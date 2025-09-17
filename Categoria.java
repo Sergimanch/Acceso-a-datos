@@ -1,3 +1,7 @@
-public class Categoria{
-
+public enum Categoria {
+    ELECTRONICA,
+    ROPA,
+    ALIMENTOS,
+    HOGAR,
+    JUGUETES
 }
