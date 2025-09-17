@@ -28,17 +28,8 @@ public class Producto{
     public int get_Stock(){
         return this.stock;
     }
-    public void set_Codigo(String codigo){
-        this.codigo = codigo;
-    }
-    public void set_Nombre(String nombre){
-        this.nombre = nombre;
-    }
      public void set_Precio(Double precio){
         this.precio = precio;
-    }
-     public void set_Categoria(Categoria cat){
-        this.cat = cat;
     }
     public void set_Stock(int stock){
         this.stock = stock;
@@ -47,7 +38,5 @@ public class Producto{
     public double todoStock(){
         return stock * precio;
     }
-
-
 
 }
