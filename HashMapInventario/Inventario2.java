@@ -1,3 +1,4 @@
+package HashMapInventario;
 import java.util.ArrayList;
 
 public class Inventario2 {
@@ -35,11 +36,11 @@ public class Inventario2 {
         System.out.println("El tamaño del inventario es " + inv.size());
     }
 
-    public void venderObjeto(String codigo, int dinero) {
+    public void venderObjeto(String codigo,int c, int dinero) {
         for (Producto prod : inv) {
             if (prod.get_Codigo().equals(codigo)) {
                 if (dinero >= prod.get_precio()) {
-                    if (prod.get_Stock() > 0) {
+                    if (prod.get_Stock() > c) {
                         prod.set_Stock(prod.get_Stock() - 1); 
                         System.out.println("El objeto se ha vendido correctamente. Stock restante: " + prod.get_Stock());
                     } else {

@@ -1,3 +1,4 @@
+package HashMapInventario;
 public class Producto{
     private String codigo;
     private String nombre;
@@ -37,6 +38,16 @@ public class Producto{
 
     public double todoStock(){
         return stock * precio;
+    }
+    @Override
+    public String toString() {
+        return "Producto{" +
+            "Código='" + codigo + '\'' +
+            ", Nombre='" + nombre + '\'' +
+            ", Precio=" + precio +
+            ", Categoría=" + cat +
+            ", Stock=" + stock +
+            '}';
     }
 
 }
