@@ -4,7 +4,7 @@ public class Inventario {
     private String nomEmpresa;
     private HashMap<String, Producto> inv;
 
-
+    
     public Inventario(String nomEmpresa){
         this.inv = new HashMap<String, Producto>();
         this.nomEmpresa = nomEmpresa;
@@ -38,8 +38,6 @@ public class Inventario {
             System.out.println("No se ha podido vender el objeto");
         else
             System.out.println("Se ha producido un error");
-        
-        
     }
 
 }
